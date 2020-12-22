@@ -1,0 +1,25 @@
+{
+  "name": "my-slots",
+  "version": "1.0.0",
+  "description": "My slots node application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natikarsunil/my-slots-node.git"
+  },
+  "keywords": [
+    "slots",
+    "my slots",
+    "time booking",
+    "booking"
+  ],
+  "author": "natikarsunil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natikarsunil/my-slots-node/issues"
+  },
+  "homepage": "https://github.com/natikarsunil/my-slots-node#readme"
+}
