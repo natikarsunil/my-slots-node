@@ -1,26 +1,33 @@
-<%- include ("_header.ejs") %>
+<%- include ("_partials/_header.ejs") %>
 
     <h1>Login page</h1>
 
     <div class="col-md-5">
         <br/>
-        <form method="POST" action="/login">
+        <form method="POST" action="/auth/login">
         
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email"
+                    value="<%= typeof email != 'undefined' ? email : '' %>"/>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                    value="<%= typeof password != 'undefined' ? password : '' %>"/>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
             
         </form>
         
+        <div class="form-group">
+            <br /> 
+            Not a member yet? 
+            <a href="/auth/register">Click here to register</a>
+        </div>
     </div>
 
-<%- include ("_footer.ejs") %>
+<%- include ("_partials/_footer.ejs") %>

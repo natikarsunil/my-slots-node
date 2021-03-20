@@ -1,5 +1,9 @@
-<%- include ("_header.ejs") %>
+<%- include ("_partials/_header.ejs") %>
 
     <h1>Welcome to my slots</h1>
 
-<%- include ("_footer.ejs") %>
+    <form action="/auth/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+      </form>
+
+<%- include ("_partials/_footer.ejs") %>
